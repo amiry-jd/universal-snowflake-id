@@ -22,6 +22,10 @@ jobs:
       - name: Build package
         run: bun run build
 
+      - name: Rename package-name for GitHub Packages
+        run: |
+          jq '.name = "@amiry-jd/universal-snowflake-id"' package.json > tmp.json && mv tmp.json package.json
+
       - name: Configure npm for GitHub Packages
         run: |
           echo "@amiry-jd:registry=https://npm.pkg.github.com/" >> ~/.npmrc
@@ -41,7 +45,11 @@ jobs:
       - name: Clean up .npmrc
         run: rm ~/.npmrc
 
-      - name: Set up npm auth
+      - name: Rename package-name for GitHub Packages
+        run: |
+          jq '.name = "@amiry-jd/universal-snowflake-id"' package.json > tmp.json && mv tmp.json package.json
+
+      - name: Configure npm for npmjs packages
         run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
 
       - name: Publish to npm

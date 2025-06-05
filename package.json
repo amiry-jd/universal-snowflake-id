@@ -1,5 +1,5 @@
 {
-  "name": "@amiry-jd/universal-snowflake-id",
+  "name": "universal-snowflake-id",
   "description": "Universal Snowflake ID generator for Node.js, Browsers, Deno, and Bun. Base62 encoded.",
   "type": "module",
   "repository": {
