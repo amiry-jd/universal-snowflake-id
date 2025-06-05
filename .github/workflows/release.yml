@@ -2,8 +2,13 @@ name: Release Package
 
 on:
   push:
+    branches:
+      - main
     tags:
-      - "v*.*.*"
+      - "v*"
+
+  release:
+    types: [published]
 
 jobs:
   publish:
