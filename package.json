@@ -1,10 +1,14 @@
 {
-  "name": "universal-snowflake-id",
+  "name": "@amiry-jd/universal-snowflake-id",
   "description": "Universal Snowflake ID generator for Node.js, Browsers, Deno, and Bun. Base62 encoded.",
   "type": "module",
   "repository": {
     "type": "git",
     "url": "https://github.com/amiry-jd/universal-snowflake-id"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
   },
   "peerDependencies": {
     "typescript": "^5"
