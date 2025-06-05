@@ -21,6 +21,7 @@
     "import": "./dist/index.esm.js"
   },
   "scripts": {
+    "release": "bunx release-it",
     "build": "microbundle --strict --format cjs,esm,umd",
     "test": "bun test"
   },
@@ -37,7 +38,8 @@
     "ulid"
   ],
   "devDependencies": {
+    "@types/bun": "latest",
     "microbundle": "^0.15.1",
-    "@types/bun": "latest"
+    "release-it": "^19.0.3"
   }
 }
