@@ -4,13 +4,13 @@
   "type": "module",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/amiry-jd/universal-snowflake-id"
   },
   "peerDependencies": {
     "typescript": "^5"
   },
-  "version": "1.0.0",
-  "author": "Your Name",
+  "version": "1.0.1",
+  "author": "Javad Amiry",
   "license": "MIT",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
