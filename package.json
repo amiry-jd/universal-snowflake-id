@@ -13,7 +13,7 @@
   "peerDependencies": {
     "typescript": "^5"
   },
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "Javad Amiry",
   "license": "MIT",
   "main": "dist/index.cjs.js",
